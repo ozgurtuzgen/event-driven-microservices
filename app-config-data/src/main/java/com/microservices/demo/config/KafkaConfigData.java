@@ -11,7 +11,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = "kafka-config")
 public class KafkaConfigData {
     private String bootstrapServers;
-    private String schemaRegistryUrlKeys;
+    private String schemaRegistryUrlKey;
     private String schemaRegistryUrl;
     private String topicName;
     private List<String> topicNamesToCreate;
