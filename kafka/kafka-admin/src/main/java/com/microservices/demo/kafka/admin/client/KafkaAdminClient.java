@@ -2,7 +2,6 @@ package com.microservices.demo.kafka.admin.client;
 
 import com.microservices.demo.config.KafkaConfigData;
 import com.microservices.demo.config.RetryConfigData;
-import com.microservices.demo.kafka.admin.config.WebClientConfig;
 import com.microservices.demo.kafka.admin.exception.KafkaClientException;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
@@ -20,6 +19,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 @Component
@@ -145,13 +145,14 @@ public class KafkaAdminClient {
 
     }
 
-    private Collection<TopicListing> doGetTopics(RetryContext retryContext) {
-        LOG.info("Reading kafka topic {}, attempt {}", kafkaConfigData.getTopicNamesToCreate().toArray(), retryContext.getRetryCount());
-        Collection<TopicListing> topics = adminClient.listTopics().listings().get();
-        if (topics!= null){
-            topics.forEach(topic-> LOG.debug("Topic with name {}", topic.name()));
+    private Collection<TopicListing> doGetTopics(RetryContext retryContext)
+       throws ExecutionException, InterruptedException {
+            LOG.info("Reading kafka topic {}, attempt {}",
+                    kafkaConfigData.getTopicNamesToCreate().toArray(), retryContext.getRetryCount());
+            Collection<TopicListing> topics = adminClient.listTopics().listings().get();
+            if (topics != null) {
+                topics.forEach(topic -> LOG.debug("Topic with name {}", topic.name()));
+            }
+            return topics;
         }
-
-        return topics;
-    }
 }
