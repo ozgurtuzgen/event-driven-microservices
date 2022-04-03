@@ -1,6 +1,0 @@
-2021-11-01 23:43:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on OTUZGEN-EliteBook with PID 256315 (/home/ozgurtuzgen/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by ozgurtuzgen in /home/ozgurtuzgen/IdeaProjects/microservices-demo)
-2021-11-01 23:43:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-11-01 23:43:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.426 seconds (JVM running for 2.473)
-2021-11-01 23:43:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts.
-2021-11-01 23:43:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-11-01 23:43:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
