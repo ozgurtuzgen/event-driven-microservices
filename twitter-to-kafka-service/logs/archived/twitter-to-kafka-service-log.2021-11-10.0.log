@@ -1,0 +1,9 @@
+2021-11-10 22:56:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on OTUZGEN-EliteBook with PID 111793 (/home/ozgurtuzgen/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by ozgurtuzgen in /home/ozgurtuzgen/IdeaProjects/microservices-demo)
+2021-11-10 22:56:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-11-10 22:56:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.793 seconds (JVM running for 3.258)
+2021-11-10 22:56:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts.
+2021-11-10 22:56:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-11-10 22:56:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2021-11-10 22:56:49 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-11-10 22:56:49 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lake newspaper singer percentage manufacturer difficulty police Java relationship criticism world singer pollution pollution
+2021-11-10 22:56:59 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text singer police difficulty passenger Microservices decision possibility
